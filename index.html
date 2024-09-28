@@ -24,7 +24,7 @@
             <img src="assist/maxresdefault.jpg" alt="" class="song-img">
             <h1>Jesus in la</h1>
             <p>Alec Benjamin</p>
-            <audio controls>
+            <audio id="song">
                 <source src="assist/Alec Benjamin - Jesus in LA [Official Music Video].mp3" type="audio/mpeg">
             </audio>
             <input type="range" value="0" id="progress">
@@ -33,8 +33,8 @@
                 <div>
                     <i class="fa-solid fa-backward"></i>
                 </div>
-                <div>
-                    <i class="fa-solid fa-play"></i>
+                <div onclick="playPause()">
+                    <i class="fa-solid fa-play" id="ctrlicon"></i>
                 </div>
                 <div>
                     <i class="fa-solid fa-forward"></i>
